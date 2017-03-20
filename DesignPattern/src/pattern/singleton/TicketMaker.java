@@ -12,7 +12,8 @@ public class TicketMaker {
 		return ticketMaker;
 	}
 	
-	public int getNextTicketNumber() {
+	// マルチスレッド対応のためsynchronized修飾子を付加
+	public synchronized int getNextTicketNumber() {
 		return ticket++;
 	}
 }
