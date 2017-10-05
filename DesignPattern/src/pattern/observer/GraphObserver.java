@@ -4,7 +4,7 @@ public class GraphObserver implements Observer {
 
 	@Override
 	public void update(NumberGenerator generator) {
-		System.out.print("GraphObserber:");
+		System.out.println("GraphObserber:");
 		for(int i = 0; i < generator.getNumber(); i++) {
 			System.out.print("*");
 		}
