@@ -1,12 +1,14 @@
 package pattern.memento.game;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * {@code money}フィールド,{@code fruits}リストを保持する{@code Memento}クラス
  */
-public class Memento {
+@SuppressWarnings("serial")
+public class Memento implements Serializable {
 	// フィールドはデフォルト修飾子とし、同一パッケージ内からのみアクセス可能とする。
 	int money;
 	ArrayList<String> fruits;
